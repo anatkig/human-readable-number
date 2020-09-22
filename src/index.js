@@ -49,17 +49,23 @@ module.exports = function toReadable (number) {
             case 18: return "eighteen";
             case 19: return "nineteen";
         }
+    
     else if(number<100&&number%10===0)
       return barr[parseInt(number.toString()[0])-2];
     else if(number<100)
-        return barr[parseInt(number.toString()[0])-2]+" " + smarr[parseInt(number.toString()[1]-2];
-                                                                           else if(number===100) return "one hundred";
-                                                                           else if(number<1000&&number%100<10)
-                                                                  return smarr[parseInt(number.toString()[0]-2]+ " " + h+" "+ varr[parseInt(number.toString()[2])-1];
+        return barr[parseInt(number.toString()[0])-2]+" " + smarr[parseInt(number.toString()[1])-2];
+                                                                           
+                                                                           
+    else if(number===100) return "one hundred";
+                                                                          
+    else if(number<1000&&number%100<10)
+    return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+ varr[parseInt(number.toString()[2])-1];
+    
     else if(number<1000&&number%100<20)
-        return smarr[parseInt(number.toString()[0]-2]+ " " + h+" "+midarr[parseInt(number.toString()[2]);
-                                                                           else if(number<1000)
-                                                                  return smarr[parseInt(number.toString()[0]-2]+ " " + h+" "+ barr[parseInt(number.toString()[1])-2]+" " + smarr[parseInt(number.toString()[2]-2];
+    return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+midarr[parseInt(number.toString()[2]);
+                                                                           
+    else if(number<1000)
+    return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+ barr[parseInt(number.toString()[1])-2]+" " + smarr[parseInt(number.toString()[2])-2];
         
                                                                            
                                                                           
