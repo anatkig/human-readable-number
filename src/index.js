@@ -62,7 +62,7 @@ module.exports = function toReadable (number) {
     return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+ varr[parseInt(number.toString()[2])-1];
     
     else if(number<1000&&number%100<20)
-    return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+midarr[parseInt(number.toString()[2]);
+    return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+midarr[parseInt(number.toString()[2])];
                                                                            
     else if(number<1000)
     return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+ barr[parseInt(number.toString()[1])-2]+" " + smarr[parseInt(number.toString()[2])-2];
