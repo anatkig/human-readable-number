@@ -12,7 +12,7 @@ module.exports = function toReadable (number) {
     let varr=[one,two,three,four,five,six,seven,eight,nine];
     
     let midarr=["ten","eleven", "twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"];
-    let smarr=[two,three,four,five,six,seven,eight,nine];
+    let smarr=[one,two,three,four,five,six,seven,eight,nine];
     
    const twenty="twenty";
     const thirty="thirty";
@@ -53,7 +53,7 @@ module.exports = function toReadable (number) {
     else if(number<100&&number%10===0)
       return barr[parseInt(number.toString()[0])-2];
     else if(number<100)
-        return barr[parseInt(number.toString()[0])-2]+" " + smarr[parseInt(number.toString()[1])-2];
+        return barr[parseInt(number.toString()[0])-2]+" " + smarr[parseInt(number.toString()[1])-1];
                                                                            
                                                                            
     else if(number===100) return "one hundred";
@@ -65,7 +65,7 @@ module.exports = function toReadable (number) {
     return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+midarr[parseInt(number.toString()[2])];
                                                                            
     else if(number<1000)
-    return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+ barr[parseInt(number.toString()[1])-2]+" " + smarr[parseInt(number.toString()[2])-2];
+    return smarr[parseInt(number.toString()[0])-2]+ " " + h+" "+ barr[parseInt(number.toString()[1])-2]+" " + smarr[parseInt(number.toString()[2])-1];
         
                                                                            
                                                                           
