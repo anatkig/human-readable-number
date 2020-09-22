@@ -30,10 +30,10 @@ module.exports = function toReadable (number) {
         switch(number){
             case 0: return "zero";
             case 1: return "one";
-            case 2: return "two;
+            case 2: return "two";
                 case 3: return "three";
             case 4: return "four";
-            case 5: return "five;
+            case 5: return "five";
                 case 6: return "six";
             case 7: return "seven";
             case 8: return "eight";
@@ -47,7 +47,7 @@ module.exports = function toReadable (number) {
             case 16: return "sixteen";
             case 17: return "seventeen";
             case 18: return "eighteen";
-            case 19: return "nineteen;
+            case 19: return "nineteen";
         }
     else if(number<100&&number%10===0)
       return barr[parseInt(number.toString()[0])-2];
